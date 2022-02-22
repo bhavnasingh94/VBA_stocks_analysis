@@ -1,7 +1,7 @@
 # VBA_stocks_analysis
-##Overview of Project
+#Overview of Project
   The purpose of the project was to to expand the dataset to include the entire stock market over the years 2017 and 2018 to determine whether the stocks are worth investing on or not. The goal was to refactor the solution code to through all the data one time in order to collect the same information.
-  ## Analysis 
+  # Analysis 
     I began by activating DQAnalysis worksheets, created loops through stock data, use the ticketindex to access the stock ticker index, had the TickerIndex set to equal to zero before looping over the rows. Here are my codes.
     Sub AllStocksAnalysis()
     Dim startTime As Single
@@ -115,8 +115,8 @@ Next i
 
 End Sub
 
-##Summary
-###Pros and Cons
+#Summary
+#Pros and Cons
 Refactoring the code is intended to improve the design, and implementation of the code while maintaining its functionality. However, further code refactoring activities may require additional effort to regain this knowledge. (Nassif, Matthieu; Robillard, Martin P, 2017) The benefit in the refactoring process of the stocks analysis is that decrease in the running time. For this case, it ran for 0.199 seconds for 2017 stock analysis and 
 0.187 seconds for the year 2018 as following
 ![VBA_Challenge_2017_](https://user-images.githubusercontent.com/98790082/155231576-da1e025f-4c23-4ad2-ae70-31b879b284d1.png)
