@@ -1,4 +1,4 @@
-# VBA_stocks_analysis
+# VBA Stocks Analysis Overview
 #Overview of Project
   The purpose of the project was to to expand the dataset to include the entire stock market over the years 2017 and 2018 to determine whether the stocks are worth investing on or not. The goal was to refactor the solution code to through all the data one time in order to collect the same information.
   # Analysis 
@@ -11,15 +11,11 @@
     
         startTime = Timer
 
-'1)Format the output sheet on the "All Stocks Analysis" worksheet.
-    Worksheets("All Stocks Analysis").Activate
     
     Range("A1").Value = "All Stocks (" + yearValue + ")"
     Cells(3, 1).Value = "Ticker"
     Cells(3, 2).Value = "Total Daily Volume"
     Cells(3, 3).Value = "Return"
-
-'2)Initialize an array of all tickers.
 
     Dim tickers(12) As String
     'Creates and array with 12 elements
@@ -36,11 +32,9 @@
     tickers(10) = "TERP"
     tickers(11) = "VSLR"
   
-'3a)Initialize variables for the starting price and ending price.
     Dim startingPrice As Single
     Dim endingPrice As Single
     
-'3b)Activate the data worksheet.
     Worksheets(yearValue).Activate
 
 '3c)Find the number of rows to loop over.
