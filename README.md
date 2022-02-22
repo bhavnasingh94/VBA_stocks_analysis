@@ -67,3 +67,7 @@ Refactoring the code is intended to improve the design, and implementation of th
 ![VBA_Challenge_2017_](https://user-images.githubusercontent.com/98790082/155231576-da1e025f-4c23-4ad2-ae70-31b879b284d1.png)
 
 ![VBA_Challenge_2018_](https://user-images.githubusercontent.com/98790082/155231550-99949c3b-9984-49be-bf87-5694f008caf4.png)
+
+
+## References
+Nassif, Matthieu; Robillard, Martin P. (November 2017). "Revisiting turnover-induced knowledge loss in software projects". 2017 IEEE International Conference on Software Maintenance and Evolution (ICSME): 261–272. doi:10.1109/ICSME.2017.64.
