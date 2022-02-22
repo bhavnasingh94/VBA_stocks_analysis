@@ -37,8 +37,6 @@
     
     Worksheets(yearValue).Activate
 
-
-'5)Loop through rows in the data.
     Worksheets(yearValue).Activate
         For j = 2 To RowCount
         
