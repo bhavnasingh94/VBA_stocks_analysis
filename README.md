@@ -67,47 +67,7 @@
         End If
         'Determines the end of the ticker section
         
-    Next j
-    
-'6)Output the data for the current ticker.
-    Worksheets("All Stocks Analysis").Activate
-    Cells(4 + i, 1).Value = ticker
-    Cells(4 + i, 2).Value = totalVolume
-    Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
- Next i
 
-
-Worksheets("All Stocks Analysis").Activate
-
-Range("A3:C3").Font.Bold = True
-Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
-Range("B4:B15").NumberFormat = "#,##0"
-Range("C4:C15").NumberFormat = "0.0%"
-Columns("B").AutoFit
-
-'Color Formatting
-    dataRowStart = 4
-    dataRowEnd = 15
-    For i = dataRowStart To dataRowEnd
-    
-    
-    If Cells(i, 3) > 0 Then
-        Cells(i, 3).Interior.Color = vbGreen
-        'Color the cell green
-    ElseIf Cells(i, 3) < 0 Then
-        Cells(i, 3).Interior.Color = vbRed
-        'Color the cell red
-    Else
-        Cells(i, 3).Interior.Color = xlNone
-        'Clear the cell color
-    
-    End If
-Next i
-
-    endTime = Timer
-    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
-
-End Sub
 
 #Summary
 #Pros and Cons
