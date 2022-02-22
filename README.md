@@ -37,15 +37,7 @@
     
     Worksheets(yearValue).Activate
 
-'3c)Find the number of rows to loop over.
-    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
-    
-'4)Loop through the tickers.
-    For i = 0 To 11
-        ticker = tickers(i)
-        'Do stuff with ticker
-        totalVolume = 0
-    
+
 '5)Loop through rows in the data.
     Worksheets(yearValue).Activate
         For j = 2 To RowCount
@@ -68,9 +60,8 @@
         'Determines the end of the ticker section
         
 
-
-#Summary
-#Pros and Cons
+# Summary
+# Pros and Cons
 Refactoring the code is intended to improve the design, and implementation of the code while maintaining its functionality. However, further code refactoring activities may require additional effort to regain this knowledge. (Nassif, Matthieu; Robillard, Martin P, 2017) The benefit in the refactoring process of the stocks analysis is that decrease in the running time. For this case, it ran for 0.199 seconds for 2017 stock analysis and 
 0.187 seconds for the year 2018 as following
 ![VBA_Challenge_2017_](https://user-images.githubusercontent.com/98790082/155231576-da1e025f-4c23-4ad2-ae70-31b879b284d1.png)
