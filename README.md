@@ -2,7 +2,7 @@
 ## Overview of Project
   The purpose of the project was to to expand the dataset to include the entire stock market over the years 2017 and 2018 to determine whether the stocks are worth investing on or not. The goal was to refactor the solution code to through all the data one time in order to collect the same information.
   # Analysis 
-    I began by activating DQAnalysis worksheets,     created loops through stock data, use the ticketindex to access the stock ticker index, had the TickerIndex set to equal to zero before looping over the rows. Here are my codes.
+  I began by activating DQAnalysis worksheets, created loops through stock data, use the ticketindex to access the stock ticker index, had the TickerIndex set to equal to zero before looping over the rows. Here are my codes.
     
     
     Sub AllStocksAnalysis()
